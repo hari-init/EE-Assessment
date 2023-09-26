@@ -1,0 +1,165 @@
+@import '@oruga-ui/oruga-next/src/scss/oruga-full-vars';
+
+:root {
+    --oruga-variant-primary: #484848;
+    --oruga-sidebar-content-background-color: #ffffff;
+    --oruga-datepicker-item-selected-background-color: #484848;
+    --oruga-slider-fill-background: #484848;
+    --oruga-tooltip-background-color: #484848;
+}
+
+.o-side__content--fullheight {
+    display: block;
+}
+
+.o-field--addons {
+    // align-items: center;
+    // width: 100%;
+
+    span {
+        // width: 20%;
+        // font-weight: 500;
+        // text-align: right;
+    }
+}
+
+.o-field__label {
+    margin-bottom: 5px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f8f8;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.overview {
+    width: 50%;
+    margin: auto;
+
+    .create-cta {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+
+    }
+}
+
+
+.sidebar-title {
+    h2 {
+        margin: 0px;
+    }
+
+    svg {
+        cursor: pointer;
+    }
+
+    padding: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    min-height: 50px;
+
+    .card-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+    .date-card {
+        margin: 5px;
+        display: flex;
+        justify-content: space-around;
+        background: var(--oruga-variant-primary);
+        border-radius: 6px;
+        color: #f8f8f8;
+    }
+}
+
+.o-side__content {
+    padding: 10px;
+    width: 400px;
+}
+
+
+.date-card-large {
+    .date-card-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        svg {
+            cursor: pointer;
+        }
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+    .date-card-content {
+        margin: 5px;
+        display: flex;
+        justify-content: space-around;
+        background: var(--oruga-variant-primary);
+        border-radius: 6px;
+        flex-direction: column;
+
+        .o-field__label {
+            color: #f8f8f8;
+            font-weight: 400;
+        }
+
+        .date-inputs {
+            display: flex;
+
+            .o-field {
+                padding: 5px 5px 0 5px;
+            }
+        }
+
+        .select-input {
+            .o-field {
+                padding: 0px 5px 5px 5px;
+
+                .o-ctrl-sel {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.sidebar-cta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sc-style {
+    display: flex;
+    flex-direction: column;
+}
